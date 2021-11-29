@@ -1,0 +1,77 @@
+//ATIVIDADE 1
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Atividade 1</title>
+        <link rel="stylesheet" href="style/style.css">
+       
+    </head>
+    <body>
+        <header class="header-container">
+            <div class="header-title">Selecione uma categoria:</div>
+            <nav class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-items">Seções:</li>
+                    <li class="menu-items"><a href="index.html" class="links">Aventura</a></li>
+                    <li class="menu-items"><a href="index.html" class="links">| Drama |</a></li>
+                    <li class="menu-items"><a href="index.html" class="links">Ficção</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        <nav class="list-container">
+         <div class="genero-1">
+            <h1>Secções</h1>
+        <ul class="tree">
+            <li>
+                <span wm-folder id="title-movie"><a>Aventura</a></span>
+                <ul>
+                    <ul>
+                            <li>produto</li>
+                            <li>Qualquer Coisa</li>
+                        </ul>
+                </ul> 
+            </li>
+        </ul>
+        </div>
+        <div class="genero-2">
+        <ul class="tree">
+            <li>
+             <span wm-folder id="title-movie2">Aventura</span>
+                <ul>
+                    <li>
+                        Application
+                        <ul>
+                            <li>Ficção</li>
+                            <li>Qualquer Coisa</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        </div> 
+    </nav>
+    </main>
+        
+     
+
+            <script>
+                 document.querySelectorAll('[wm-folder]').forEach(folder => {
+                     folder.onclick = function() {
+                         event.preventDefault();
+                        const ul = folder.nextElementSibling
+                        const d = ul.style.display
+                        ul.style.display= d =='none' ? 'block' : 'none'
+        
+                     }
+                 })
+              
+                   
+            </script>
+        
+        
+        
+    </body>
+    
+</html>
