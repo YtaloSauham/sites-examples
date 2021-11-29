@@ -1,4 +1,3 @@
-//ATIVIDADE 1
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -11,66 +10,41 @@
         <header class="header-container">
             <div class="header-title">Selecione uma categoria:</div>
             <nav class="menu-container">
-                <ul class="menu-list">
-                    <li class="menu-items">Seções:</li>
-                    <li class="menu-items"><a href="index.html" class="links">Aventura</a></li>
-                    <li class="menu-items"><a href="index.html" class="links">| Drama |</a></li>
-                    <li class="menu-items"><a href="index.html" class="links">Ficção</a></li>
-                </ul>
+                <div class="menu-items">Seções:</div>
+                <div class="menu-items"><a href="index.html" class="links">Aventura</a></div>
+                <div class="menu-items"><a href="index.html" class="link-center">Drama</a></div>
+                <div class="menu-items"><a href="index.html" class="links">Ficção</a></div>
             </nav>
         </header>
+        
         <main>
         <nav class="list-container">
-         <div class="genero-1">
-            <h1>Secções</h1>
-        <ul class="tree">
-            <li>
-                <span wm-folder id="title-movie"><a>Aventura</a></span>
-                <ul>
+            <div class="separador"></div>
+            <div class="genero">
+                <div class="genero-1">
+                    <h1>Aventura</h1>
+                </div>
                     <ul>
-                            <li>produto</li>
-                            <li>Qualquer Coisa</li>
-                        </ul>
-                </ul> 
-            </li>
-        </ul>
-        </div>
-        <div class="genero-2">
-        <ul class="tree">
-            <li>
-             <span wm-folder id="title-movie2">Aventura</span>
+                        <li>Avatar</li>
+                        <li>Sherlock Holmes</li>
+                        <li>Os Vingadores</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="genero">
+                <div class="genero-2">
+                    <h1>Drama</h1>
+                </div> 
                 <ul>
-                    <li>
-                        Application
-                        <ul>
-                            <li>Ficção</li>
-                            <li>Qualquer Coisa</li>
-                        </ul>
-                    </li>
+                   <li>Batman</li>
+                   <li>Forrest Gump</li>
+                   <li>Drive</li>
                 </ul>
-            </li>
-        </ul>
-        </div> 
-    </nav>
-    </main>
-        
-     
-
-            <script>
-                 document.querySelectorAll('[wm-folder]').forEach(folder => {
-                     folder.onclick = function() {
-                         event.preventDefault();
-                        const ul = folder.nextElementSibling
-                        const d = ul.style.display
-                        ul.style.display= d =='none' ? 'block' : 'none'
-        
-                     }
-                 })
-              
-                   
-            </script>
-        
-        
+            </div>
+            
+        </nav>
+        </main>
         
     </body>
     
